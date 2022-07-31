@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="account">帳號</label>
+            <input type="text" id="account" name="account">
+        </div>
+        <div>
+            <label for="pw">密碼</label>
+            <input type="password" id="pw" name="pw">
+        </div>
+        <div>
+            <label for="email">E mail</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="number">數量</label>
+            <input type="number" id="number" name="number">
+        </div>
+        <div>
+            <label for="birth">生日</label>
+            <input type="date" id="birth" name="birth">
+        </div>
+        <div>
+            <label for="redeem">訂位日期</label>
+            <input type="datetime-local" id="redeem" name="redeem">
+        </div>
+        <div>
+            <label for="edu">學歷</label>
+            <select name="edu" id="edu">
+                <option value="國小">國小</option>
+                <option value="國中">國中</option>
+                <option value="高中職">高中職</option>
+                <option value="大專院校">大專院校</option>
+                <option value="研究所以上">研究所以上</option>
+            </select>
+        </div>
+        <div>
+            <label>性別</label>
+
+            <input type="radio" id="men" name="gender" value="男">
+            <label for="men">男</label>
+
+            <input type="radio" id="women" name="gender" value="女">
+            <label for="women">女</label>
+
+            <input type="radio" id="unknown" name="gender" value="不透露">
+            <label for="unknown">不透露</label>
+
+            <label for="men2">
+                <input type="radio" id="men2" name="gender">
+                男
+            </label>
+        </div>
+        <div>
+            <label>您從哪裡得知本課程</label>
+
+            <input type="checkbox" id="paper" name="howToKnows" value="報章雜誌">
+            <label for="paper">報章雜誌</label>
+            
+            <input type="checkbox" id="facebook" name="howToKnows" value="Facebook">
+            <label for="facebook">Facebook</label>
+
+            <input type="checkbox" id="news" name="howToKnows" value="新聞報導">
+            <label for="news">新聞報導</label>
+
+        </div>
+        <div>
+            <label for="test">測試</label>
+            <input type="text" id="test" name="test" list="myList">
+            <datalist id="myList">
+                <option value="生活">生活</option>
+                <option value="科技">科技</option>
+                <option value="健康">健康</option>
+                <option value="美食">美食</option>
+            </datalist>
+        </div>
+        <div>
+            <label for="content">內容</label>
+            <textarea name="content" id="content" cols="30" rows="5"></textarea>
+        </div>
+        
+        <input type="submit" value="送出">
+        <input type="reset">
+        <input type="button" value="自訂">
+        
+        <br>
+        
+        <button type="submit">送出</button>
+        <button type="reset">清除</button>
+        <button type="button">自訂</button>
+    </form>
+</body>
+</html>
