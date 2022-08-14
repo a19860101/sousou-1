@@ -91,9 +91,39 @@
             border-right-style:;
             border-right-width:; */
         }
+        /* 
+            區塊vs行內
+            行內沒有width,height
+            border,padding,margin只有左右
+        
+        */
+        span {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            padding: 30px;
+            border: 10px solid #f00;
+            background-color: rgb(255 0 0 / .2);
+            display: block;
+        }
+        /* 
+            行內元素不可以包覆區塊元素（元素轉換除外）
+        */
     </style>
 </head>
 <body>
+    <a href="">
+        <img src="" alt="">
+        <span></span>
+    </a>
+    <span>行內</span>
+    <span>行內</span>
+    <span>行內</span>
+    <span>行內</span>
+    <span>行內</span>
+    <span>行內</span>
+    <span>行內</span>
+    <span>行內</span>
     <div class="box">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. At sit molestiae repellendus culpa perspiciatis illo provident, temporibus a veritatis debitis fugit, error eveniet nostrum eaque? Distinctio perspiciatis nihil libero iste.
     </div>
