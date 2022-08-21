@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #ccc;
+            width: 1200px;
+            margin:auto;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items:flex-end;
+            /* 
+                flex-start, flex-end, center
+                stretch, baseline
+            */
+            justify-content: center;
+            /* 
+                flex-start, flex-end, center
+                space-between, space-around, space-evenly
+            */
+            /* 
+                當flex-direction為row
+                justify-content表水平
+                align-items表垂直
+                
+                當flex-direction為column
+                justify-content表垂直
+                align-items表水平
+            */
+        }
+        .box {
+            width: calc(100% / 6);
+            padding: 15px;
+
+            background-color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ea repudiandae maiores recusandae, voluptate beatae consequuntur magnam? Mollitia veniam ut ab, molestias aliquam, sequi eos dignissimos eveniet facere eum vel.
+            </p>
+        </div>
+        <div class="box">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ea repudiandae maiores recusandae, voluptate beatae consequuntur magnam? Mollitia veniam ut ab, molestias aliquam, sequi eos dignissimos eveniet facere eum vel.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ea repudiandae maiores recusandae, voluptate beatae consequuntur magnam? Mollitia veniam ut ab, molestias aliquam, sequi eos dignissimos eveniet facere eum vel.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ea repudiandae maiores recusandae, voluptate beatae consequuntur magnam? Mollitia veniam ut ab, molestias aliquam, sequi eos dignissimos eveniet facere eum vel.
+            </p>
+        </div>
+        <div class="box">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ea repudiandae maiores recusandae, voluptate beatae consequuntur magnam? Mollitia veniam ut ab, molestias aliquam, sequi eos dignissimos eveniet facere eum vel.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ea repudiandae maiores recusandae, voluptate beatae consequuntur magnam? Mollitia veniam ut ab, molestias aliquam, sequi eos dignissimos eveniet facere eum vel.
+            </p>
+        </div>
+        <div class="box">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ea repudiandae maiores recusandae, voluptate beatae consequuntur magnam? Mollitia veniam ut ab, molestias aliquam, sequi eos dignissimos eveniet facere eum vel.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
