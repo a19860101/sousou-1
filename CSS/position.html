@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+        .rel-1 {
+            width: 200px;
+            height: 200px;
+            background-color: rgba(0, 153, 135, 0.474);
+
+            position: relative;
+            /* top, bottom, left, right, z-index */
+
+            top: 50px;
+            z-index: 10;
+            
+        }
+        .rel-2 {
+            width: 200px;
+            height: 200px;
+            background-color: #fdfd1a;
+
+            position: relative;
+            /* top, bottom, left, right, z-index */
+            z-index: 12;
+            
+        }
+        .abs-1 {
+            width: 200px;
+            height: 200px;
+            background-color: #1a88fd;
+
+            position: absolute;
+            right: 10px;
+            top:10px;
+        }
+        .container {
+            width: 800px;
+            height: 600px;
+            background-color: #ccc;
+
+            position: relative;
+        }
+        .abs-2 {
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+            position: absolute;
+            right: -10px;
+            bottom: -20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>定位 position</h1>
+    <ul>
+        <li>靜態 static</li>
+        <li>相對 relative</li>
+        <li>絕對 absolute</li>
+        <li>固定 fixed</li>
+        <li>黏性 sticky</li>
+    </ul>
+    <div class="rel-1"></div>
+    <div class="rel-2"></div>
+    <div class="abs-1"></div>
+    <div class="container">
+        <div class="abs-2"></div>
+    </div>
+</body>
+</html>
