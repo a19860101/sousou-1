@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'serif';
+        }
+        img {
+            width: 100%;
+        }
+        nav {
+            width: 100%;
+            height: 70px;
+            background-color: #222;
+            display: flex;
+            align-items: center;
+            /* justify-content: space-between; */
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            display: inline-block;
+            padding-inline: 15px;
+            padding-block:8px
+        }
+        .menu a:hover {
+            background-color: #777;
+        }
+        .menu {
+            margin-left: auto;
+            /* margin-right: auto; */
+        }
+        .container {
+            /* width: 95%; */
+            /* max-width: 1200px; */
+            width: 1200px;
+            margin-inline: auto;
+            position: relative;
+            /* background-color: #ccc; */
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-6 {
+            flex: 0 0 calc(100% / 12 * 6);
+            /* background-color: #098; */
+        }
+        header .row {
+            align-items: center;
+        }
+        .header-img {
+            /* background-color: #ccc; */
+            width: 70%;
+            margin-inline: auto;
+            position: relative;
+            top:100px;
+        }
+        .header-avatar {
+            width: 300px;
+            display: block;
+            margin-inline: auto;
+            position: relative;
+            top: 80px;
+
+        }
+        header {
+            padding-top: 200px;
+            background-color: #ccc;
+            overflow: hidden;
+        }
+        .left-title {
+            position: absolute;
+            /* background-color: #fa0; */
+            left:30%;
+            top: 15%;
+        }
+        .right-title {
+            position: absolute;
+            /* background-color: #098; */
+            right: 30%;
+            top: 15%;    
+        }
+        .intro {
+            width: 300px;
+            position: absolute;
+            left: 50px;
+            bottom: 20px;
+            /* background-color: pink; */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">LOgo</a>
+        <div class="menu">
+            <a href="#">list</a>
+            <a href="#">list</a>
+            <a href="#">list</a>
+            <a href="#">list</a>
+            <a href="#">list</a>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <h1 class="left-title">HELLO</h1>
+            <img src="shin.png" alt="" class="header-avatar">
+            <h1 class="right-title">WORLD</h1>
+            <p class="intro">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, labore explicabo tempore repellat placeat at perspiciatis! Et quia dolorem mollitia ratione voluptates repudiandae labore placeat repellendus praesentium ullam, quo nam!
+            </p>
+        </div>
+    </header>
+    <!-- <header>
+        <div class="container row">
+            <div class="col-6">
+                <div class="header-img">
+                    <img src="shin.png" alt="">
+                </div>
+            </div>
+            <div class="col-6">
+                <h2>hello title</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aliquam maiores, veniam id modi sunt! Impedit esse omnis error non.
+                </p>
+                <a href="#">more</a>
+            </div>
+            
+        </div>
+    </header> -->
+</body>
+</html>
